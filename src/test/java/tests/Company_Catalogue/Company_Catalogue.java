@@ -64,7 +64,7 @@ public class Company_Catalogue extends baseTest {
     public void editCompanyCatalogue() {
         given().log().all()
                 .headers(header())
-                .body(finals.RequestsBody.Catalogues.EDITREQUSTBODY)
+                .body(finals.RequestsBody.Catalogues.EDITREQUESTBODY)
                 .pathParam("id", catalogueCreation)
                 .when()
                 .put(EndpointList.COMPANY_CATALOGUE_DETAIL)

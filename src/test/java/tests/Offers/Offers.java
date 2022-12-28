@@ -31,7 +31,7 @@ public class Offers extends baseTest {
                 .headers(header())
                 .pathParam("id", 1)
                 .when()
-                .get(EndpointList.OFFERS_DETAL)
+                .get(EndpointList.OFFERS_DETAIL)
                 .then()
                 .log()
                 .ifError()

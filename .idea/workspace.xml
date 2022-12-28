@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dae4defb-3b0e-47e3-a498-e35607adc8a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/finals/RequestsBody/Categories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finals/EndpointList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/finals/EndpointList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finals/RequestsBody/Catalogues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/finals/RequestsBody/Catalogues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Categories/Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Categories/Categories.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Company_Catalogue/Company_Catalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Company_Catalogue/Company_Catalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Offers/Offers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Offers/Offers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Categories/Categories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Categories/Categories.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Company_Catalogue/Company_Catalogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Company_Catalogue/Company_Catalogue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Offers/Offers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Offers/Offers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Posts/Posts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Posts/Posts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Users/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Users/Users.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +50,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="JUnit.Company_Catalogue.specificCompanyCatalogue">
+  <component name="RunManager" selected="JUnit.Categories.deleteSpecificCategory">
     <configuration name="All in Szemud24-TA-Rest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -52,48 +63,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Company_Catalogue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Categories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Company_Catalogue.*" />
+          <option name="PATTERN" value="tests.Categories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
-      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
+      <option name="PACKAGE_NAME" value="tests.Categories" />
+      <option name="MAIN_CLASS_NAME" value="tests.Categories.Categories" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Company_Catalogue.deleteCompanyCatalogue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Categories.SpecificCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Company_Catalogue.*" />
+          <option name="PATTERN" value="tests.Categories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
-      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
-      <option name="METHOD_NAME" value="deleteCompanyCatalogue" />
+      <option name="PACKAGE_NAME" value="tests.Categories" />
+      <option name="MAIN_CLASS_NAME" value="tests.Categories.Categories" />
+      <option name="METHOD_NAME" value="SpecificCategory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Company_Catalogue.editCompanyCatalogue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Categories.deleteSpecificCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Company_Catalogue.*" />
+          <option name="PATTERN" value="tests.Categories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
-      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
-      <option name="METHOD_NAME" value="editCompanyCatalogue" />
+      <option name="PACKAGE_NAME" value="tests.Categories" />
+      <option name="MAIN_CLASS_NAME" value="tests.Categories.Categories" />
+      <option name="METHOD_NAME" value="deleteSpecificCategory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Categories.editSpecificCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.Categories.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.Categories" />
+      <option name="MAIN_CLASS_NAME" value="tests.Categories.Categories" />
+      <option name="METHOD_NAME" value="editSpecificCategory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,29 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Company_Catalogue.specificPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Szemud24-TA-Rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.Company_Catalogue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
-      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
-      <option name="METHOD_NAME" value="specificPost" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Categories.deleteSpecificCategory" />
+        <item itemvalue="JUnit.Categories.editSpecificCategory" />
+        <item itemvalue="JUnit.Categories.SpecificCategory" />
+        <item itemvalue="JUnit.Categories" />
         <item itemvalue="JUnit.Company_Catalogue.specificCompanyCatalogue" />
-        <item itemvalue="JUnit.Company_Catalogue.editCompanyCatalogue" />
-        <item itemvalue="JUnit.Company_Catalogue.deleteCompanyCatalogue" />
-        <item itemvalue="JUnit.Company_Catalogue" />
-        <item itemvalue="JUnit.Company_Catalogue.specificPost" />
       </list>
     </recent_temporary>
   </component>
