@@ -6,11 +6,13 @@ import org.junit.jupiter.api.Test;
 import tests.baseTest;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.not;
 import static tests.baseTest.header;
 
 public class Company_Catalogue extends baseTest {
     @Test
-    public void AllCategories() {
+    public void AllCatalogues() {
         given()
                 .headers(header())
                 .when()
@@ -23,18 +25,64 @@ public class Company_Catalogue extends baseTest {
 
     }
 
+    public static Integer catalogueCreation =
+            given().log().all()
+                    .headers(header())
+                    .body(finals.RequestsBody.Catalogues.REQUESTBODY)
+                    .when()
+                    .post(URL + "/company-catalogues")
+                    .then()
+                    .log()
+                    .all()
+                    .assertThat()
+                    .statusCode(HttpStatus.SC_OK)
+                    .extract()
+                    .path("data.id");
+
+
     @Test
-    public void SpecificCategory() {
-        given()
+    public void specificCompanyCatalogue() {
+        given().log().all()
                 .headers(header())
-                .pathParam("id", 1)
+                .pathParam("id", catalogueCreation)
                 .when()
                 .get(EndpointList.COMPANY_CATALOGUE_DETAIL)
                 .then()
                 .log()
-                .ifError()
+                .all()
                 .assertThat()
-                .statusCode(HttpStatus.SC_OK);
+                .statusCode(HttpStatus.SC_OK)
+                .body("data.id", equalTo(catalogueCreation));
+    }
 
+    @Test
+    public void editCompanyCatalogue() {
+        given().log().all()
+                .headers(header())
+                .body(finals.RequestsBody.Catalogues.EDITREQUSTBODY)
+                .pathParam("id", catalogueCreation)
+                .when()
+                .put(EndpointList.COMPANY_CATALOGUE_DETAIL)
+                .then()
+                .log()
+                .all()
+                .assertThat()
+                .statusCode(HttpStatus.SC_OK)
+                .body("data.id", not(equalTo("123123123")));
+    }
+
+    @Test
+    public void deleteCompanyCatalogue() {
+        given().log().all()
+                .headers(header())
+                .pathParam("id", catalogueCreation)
+                .when()
+                .delete(EndpointList.COMPANY_CATALOGUE_DETAIL)
+                .then()
+                .log()
+                .all()
+                .assertThat()
+                .statusCode(HttpStatus.SC_OK)
+                .body("data.id", equalTo(catalogueCreation));
     }
 }

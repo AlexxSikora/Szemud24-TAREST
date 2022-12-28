@@ -27,7 +27,7 @@ public class Posts extends baseTest {
     public static Integer postCreation =
             given().log().all()
                     .headers(header())
-                    .body(finals.Acrticles.Posts.REQUESTBODY)
+                    .body(finals.RequestsBody.Posts.REQUESTBODY)
                     .when()
                     .post(URL + "/posts")
                     .then()
