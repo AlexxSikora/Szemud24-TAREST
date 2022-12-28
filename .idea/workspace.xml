@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dae4defb-3b0e-47e3-a498-e35607adc8a2" name="Changes" comment="" />
+    <list default="true" id="dae4defb-3b0e-47e3-a498-e35607adc8a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails/LoginAccountDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails/LoginAccountDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails/RegistrationAccountDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails/RegistrationAccountDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/Articles/Posts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Categories/Categories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Categories/Categories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Company_Catalogue/Company_Catalogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Company_Catalogue/Company_Catalogue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Offers/Offers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Offers/Offers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Posts/Posts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Posts/Posts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Users/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Users/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/baseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/baseTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +28,76 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunManager" selected="JUnit.Posts">
+    <configuration name="All in Szemud24-TA-Rest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/corretto-17.0.5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Posts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.Posts" />
+      <option name="MAIN_CLASS_NAME" value="tests.Posts.Posts" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Posts.SpecificPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.Posts.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.Posts" />
+      <option name="MAIN_CLASS_NAME" value="tests.Posts.Posts" />
+      <option name="METHOD_NAME" value="SpecificPost" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests in Szemud24-TA-Rest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Posts" />
+        <item itemvalue="JUnit.tests in Szemud24-TA-Rest" />
+        <item itemvalue="JUnit.Posts.SpecificPost" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <servers />

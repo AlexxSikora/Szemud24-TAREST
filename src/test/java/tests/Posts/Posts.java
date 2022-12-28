@@ -4,13 +4,13 @@ import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Test;
 import tests.baseTest;
 import static io.restassured.RestAssured.given;
-import static java.util.function.Predicate.not;
+import static java.lang.Integer.parseInt;
 import static org.hamcrest.Matchers.*;
+
 public class Posts extends baseTest {
 
-
     @Test
-    public void getAllPosts(){
+    public void getAllPosts() {
         given()
                 .headers(header())
                 .when()
@@ -19,53 +19,57 @@ public class Posts extends baseTest {
                 .log()
                 .ifError()
                 .assertThat()
-                .statusCode(HttpStatus.SC_OK);
-    }
-
-    @Test
-    public void postCreation(){
-
-        given().log().all()
-                .headers("Content-Type", "application/json")
-                .body(finals.Acrticles.Posts.REQUESTBODY)
-                .when()
-                .post(EndpointList.POSTS)
-                .then()
-                .log()
-                .ifError()
-                .assertThat()
                 .statusCode(HttpStatus.SC_OK)
-                .extract()
-                .response();
-
+                .body("$", not(hasValue(nullValue())));
     }
 
+
+    public static Integer postCreation =
+            given().log().all()
+                    .headers(header())
+                    .body(finals.Acrticles.Posts.REQUESTBODY)
+                    .when()
+                    .post(URL + "/posts")
+                    .then()
+                    .log()
+                    .all()
+                    .assertThat()
+                    .statusCode(HttpStatus.SC_OK)
+                    .extract()
+                    .path("data.id");
+
+
     @Test
-    public void SpecificPost() {
-        given()
+    public void specificPost() {
+        given().log().all()
                 .headers(header())
-                .pathParam("id", 1)
+                .pathParam("id", postCreation)
                 .when()
                 .get(EndpointList.DETAIL_POST)
                 .then()
                 .log()
-                .ifError()
+                .all()
                 .assertThat()
-                .statusCode(HttpStatus.SC_OK);
+                .statusCode(HttpStatus.SC_OK)
+                .body("data.id", equalTo(postCreation));
     }
+
 
     @Test
-    public void deletePost(){
+    public void deletePost() {
         given()
-                .headers("Content-Type", "application/json")
-                .pathParam("id", 1)
+                .headers(header())
+                .pathParam("id", postCreation)
                 .body(AUTH_BODY)
                 .when()
-                .post(URL + "/posts")
+                .delete(EndpointList.DETAIL_POST)
                 .then()
+                .log()
+                .all()
                 .assertThat()
-                .statusCode(HttpStatus.SC_OK);
-
-
+                .statusCode(HttpStatus.SC_OK)
+                .body("data.id", equalTo(postCreation));
     }
+
+
 }
