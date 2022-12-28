@@ -1,4 +1,5 @@
 package tests.Posts;
+
 import finals.EndpointList;
 import org.apache.http.HttpStatus;
 import org.hamcrest.Matchers;
@@ -7,7 +8,6 @@ import tests.baseTest;
 
 import static finals.RequestsBody.Posts.REQUESTBODY_;
 import static io.restassured.RestAssured.given;
-import static java.lang.Integer.parseInt;
 import static org.hamcrest.Matchers.*;
 
 public class Posts extends baseTest {
@@ -26,7 +26,6 @@ public class Posts extends baseTest {
                 .statusCode(HttpStatus.SC_OK)
                 .body("$", not(hasValue(nullValue())));
     }
-
 
     public static Integer postCreation =
             given().log().all()
