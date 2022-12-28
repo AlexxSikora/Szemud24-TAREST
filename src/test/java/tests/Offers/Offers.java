@@ -2,6 +2,7 @@ package tests.Offers;
 
 import finals.EndpointList;
 import org.apache.http.HttpStatus;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import tests.baseTest;
 
@@ -18,6 +19,7 @@ public class Offers extends baseTest {
                 .then()
                 .log()
                 .ifError()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK);
 
@@ -33,6 +35,7 @@ public class Offers extends baseTest {
                 .then()
                 .log()
                 .ifError()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK);
 

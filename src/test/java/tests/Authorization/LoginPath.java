@@ -3,6 +3,7 @@ import finals.AccountDetails.LoginAccountDetails;
 import finals.EndpointList;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import tests.baseTest;
 import static io.restassured.RestAssured.given;
@@ -22,6 +23,7 @@ import static org.hamcrest.Matchers.nullValue;
                     .then()
                     .log()
                     .ifError()
+                    .time(Matchers.lessThan(1000L))
                     .assertThat()
                     .statusCode(HttpStatus.SC_OK)
                     .contentType(ContentType.JSON)
@@ -39,6 +41,7 @@ import static org.hamcrest.Matchers.nullValue;
                     .then()
                     .log()
                     .ifError()
+                    .time(Matchers.lessThan(1000L))
                     .assertThat()
                     .statusCode(HttpStatus.SC_BAD_REQUEST)
                     .contentType(ContentType.JSON)

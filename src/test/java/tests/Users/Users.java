@@ -1,6 +1,7 @@
 package tests.Users;
 import finals.EndpointList;
 import org.apache.http.HttpStatus;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import tests.baseTest;
 
@@ -19,6 +20,7 @@ public class Users extends baseTest {
                 .then()
                 .log()
                 .ifError()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_FORBIDDEN);
     }
@@ -32,6 +34,7 @@ public class Users extends baseTest {
                 .then()
                 .log()
                 .ifError()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
                 .body("$", not(hasValue(nullValue())));

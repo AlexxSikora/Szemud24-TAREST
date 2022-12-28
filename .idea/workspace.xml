@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dae4defb-3b0e-47e3-a498-e35607adc8a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/finals/RequestsBody/Catalogues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finals/Articles/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/finals/RequestsBody/Posts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/Company_Catalogue/Company_Catalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Company_Catalogue/Company_Catalogue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Company_Catalogue/Company_Catalogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Company_Catalogue/Company_Catalogue.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +39,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="JUnit.Company_Catalogue.editCompanyCatalogue">
+  <component name="RunManager" selected="JUnit.Company_Catalogue.specificCompanyCatalogue">
     <configuration name="All in Szemud24-TA-Rest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -136,8 +133,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Company_Catalogue.editCompanyCatalogue" />
         <item itemvalue="JUnit.Company_Catalogue.specificCompanyCatalogue" />
+        <item itemvalue="JUnit.Company_Catalogue.editCompanyCatalogue" />
         <item itemvalue="JUnit.Company_Catalogue.deleteCompanyCatalogue" />
         <item itemvalue="JUnit.Company_Catalogue" />
         <item itemvalue="JUnit.Company_Catalogue.specificPost" />
