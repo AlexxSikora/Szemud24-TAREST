@@ -1,4 +1,4 @@
-package finals.Acrticles;
+package finals.RequestsBody;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

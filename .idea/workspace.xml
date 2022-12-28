@@ -5,35 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dae4defb-3b0e-47e3-a498-e35607adc8a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/finals/RequestsBody/Catalogues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails/LoginAccountDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails/LoginAccountDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails/RegistrationAccountDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/finals/AccountDetails/RegistrationAccountDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/Articles/Posts.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/finals/EndpointList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Authorization/LoginPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Categories/Categories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Categories/Categories.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Company_Catalogue/Company_Catalogue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Company_Catalogue/Company_Catalogue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Offers/Offers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Offers/Offers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Posts/Posts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Posts/Posts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/Users/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/Users/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/baseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/baseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finals/Articles/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/finals/RequestsBody/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Company_Catalogue/Company_Catalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Company_Catalogue/Company_Catalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/Posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/Posts/Posts.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="2JXiwWrUmA40vpWvVdwcvjavVLc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
-  <component name="RunManager" selected="JUnit.Posts">
+  <component name="RunManager" selected="JUnit.Company_Catalogue.editCompanyCatalogue">
     <configuration name="All in Szemud24-TA-Rest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -46,60 +55,104 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Posts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Company_Catalogue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Posts.*" />
+          <option name="PATTERN" value="tests.Company_Catalogue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Posts" />
-      <option name="MAIN_CLASS_NAME" value="tests.Posts.Posts" />
+      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
+      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Posts.SpecificPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Company_Catalogue.deleteCompanyCatalogue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.Posts.*" />
+          <option name="PATTERN" value="tests.Company_Catalogue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.Posts" />
-      <option name="MAIN_CLASS_NAME" value="tests.Posts.Posts" />
-      <option name="METHOD_NAME" value="SpecificPost" />
+      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
+      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
+      <option name="METHOD_NAME" value="deleteCompanyCatalogue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tests in Szemud24-TA-Rest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Company_Catalogue.editCompanyCatalogue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Szemud24-TA-Rest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="tests.Company_Catalogue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
+      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
+      <option name="METHOD_NAME" value="editCompanyCatalogue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Company_Catalogue.specificCompanyCatalogue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.Company_Catalogue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
+      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
+      <option name="METHOD_NAME" value="specificCompanyCatalogue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Company_Catalogue.specificPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Szemud24-TA-Rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.Company_Catalogue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.Company_Catalogue" />
+      <option name="MAIN_CLASS_NAME" value="tests.Company_Catalogue.Company_Catalogue" />
+      <option name="METHOD_NAME" value="specificPost" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Posts" />
-        <item itemvalue="JUnit.tests in Szemud24-TA-Rest" />
-        <item itemvalue="JUnit.Posts.SpecificPost" />
+        <item itemvalue="JUnit.Company_Catalogue.editCompanyCatalogue" />
+        <item itemvalue="JUnit.Company_Catalogue.specificCompanyCatalogue" />
+        <item itemvalue="JUnit.Company_Catalogue.deleteCompanyCatalogue" />
+        <item itemvalue="JUnit.Company_Catalogue" />
+        <item itemvalue="JUnit.Company_Catalogue.specificPost" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dae4defb-3b0e-47e3-a498-e35607adc8a2" name="Changes" comment="" />
+      <created>1672231076503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672231076503</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
