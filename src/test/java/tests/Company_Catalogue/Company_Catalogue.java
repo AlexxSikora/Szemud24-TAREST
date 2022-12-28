@@ -2,6 +2,7 @@ package tests.Company_Catalogue;
 
 import finals.EndpointList;
 import org.apache.http.HttpStatus;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import tests.baseTest;
 
@@ -19,7 +20,8 @@ public class Company_Catalogue extends baseTest {
                 .get(EndpointList.COMPANY_CATALOGUE)
                 .then()
                 .log()
-                .ifError()
+                .all()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK);
 
@@ -34,7 +36,9 @@ public class Company_Catalogue extends baseTest {
                     .then()
                     .log()
                     .all()
+                    .time(Matchers.lessThan(1000L))
                     .assertThat()
+                    .time(Matchers.lessThan(1000L))
                     .statusCode(HttpStatus.SC_OK)
                     .extract()
                     .path("data.id");
@@ -50,6 +54,7 @@ public class Company_Catalogue extends baseTest {
                 .then()
                 .log()
                 .all()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
                 .body("data.id", equalTo(catalogueCreation));
@@ -59,13 +64,14 @@ public class Company_Catalogue extends baseTest {
     public void editCompanyCatalogue() {
         given().log().all()
                 .headers(header())
-                .body(finals.RequestsBody.Catalogues.EDITREQUSTBODY)
+                .body(finals.RequestsBody.Catalogues.EDITREQUESTBODY)
                 .pathParam("id", catalogueCreation)
                 .when()
                 .put(EndpointList.COMPANY_CATALOGUE_DETAIL)
                 .then()
                 .log()
                 .all()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
                 .body("data.id", not(equalTo("123123123")));
@@ -81,6 +87,7 @@ public class Company_Catalogue extends baseTest {
                 .then()
                 .log()
                 .all()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
                 .body("data.id", equalTo(catalogueCreation));

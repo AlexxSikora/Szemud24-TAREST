@@ -1,8 +1,11 @@
 package tests.Posts;
 import finals.EndpointList;
 import org.apache.http.HttpStatus;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import tests.baseTest;
+
+import static finals.RequestsBody.Posts.REQUESTBODY_;
 import static io.restassured.RestAssured.given;
 import static java.lang.Integer.parseInt;
 import static org.hamcrest.Matchers.*;
@@ -17,7 +20,8 @@ public class Posts extends baseTest {
                 .get(EndpointList.POSTS)
                 .then()
                 .log()
-                .ifError()
+                .all()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
                 .body("$", not(hasValue(nullValue())));
@@ -33,6 +37,7 @@ public class Posts extends baseTest {
                     .then()
                     .log()
                     .all()
+                    .time(Matchers.lessThan(1000L))
                     .assertThat()
                     .statusCode(HttpStatus.SC_OK)
                     .extract()
@@ -49,8 +54,10 @@ public class Posts extends baseTest {
                 .then()
                 .log()
                 .all()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
+                .body("data.attributes.title", equalTo(REQUESTBODY_.get("title")))
                 .body("data.id", equalTo(postCreation));
     }
 
@@ -66,6 +73,7 @@ public class Posts extends baseTest {
                 .then()
                 .log()
                 .all()
+                .time(Matchers.lessThan(1000L))
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
                 .body("data.id", equalTo(postCreation));

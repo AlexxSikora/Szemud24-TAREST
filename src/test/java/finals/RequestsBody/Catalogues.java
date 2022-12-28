@@ -1,11 +1,6 @@
 package finals.RequestsBody;
-
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
-import java.util.Map;
 
 public class Catalogues {
 
@@ -29,7 +24,7 @@ public class Catalogues {
             .put("serviceType", "testowa branża")
             .put("adNumber", adNumber);
 
-    public static final JSONObject EDITREQUSTBODY_ = new JSONObject()
+    public static final JSONObject EDITREQUESTBODY_ = new JSONObject()
             .put("comapnyName", "edytowany tytuł")
             .put("description", "edytowany opis")
             .put("phoneNumber", phoneNumber)
@@ -45,7 +40,7 @@ public class Catalogues {
             .put("data", REQUESTBODY_)
             .toString();
 
-    public static final String EDITREQUSTBODY = new JSONObject()
-            .put("data", EDITREQUSTBODY_)
+    public static final String EDITREQUESTBODY = new JSONObject()
+            .put("data", EDITREQUESTBODY_)
             .toString();
 }

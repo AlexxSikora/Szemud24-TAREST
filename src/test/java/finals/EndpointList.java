@@ -11,7 +11,7 @@ public class EndpointList {
     public static final String COMPANY_CATALOGUE = "/company-catalogues";
     public static final String COMPANY_CATALOGUE_DETAIL = "/company-catalogues/{id}";
     public static final String OFFERS = "/offers";
-    public static final String OFFERS_DETAL = "/offers/{id}";
+    public static final String OFFERS_DETAIL = "/offers/{id}";
 
 
 
