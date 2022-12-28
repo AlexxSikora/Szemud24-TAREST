@@ -34,7 +34,7 @@ public class Posts {
             .put("isImportant", true)
             .put("fullDescription", "testowy opis")
             .put("slug", slug)
-            .put("category", "1");
+            .put("category", "2");
 
 
     public static final String REQUESTBODY = new JSONObject()
